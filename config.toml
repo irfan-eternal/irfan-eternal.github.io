@@ -534,7 +534,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         pre = "<i class='fab fa-github fa-fw' aria-hidden='true'></i>"
         post = ""
         name = ""
-        url = "https://github.com/irfan_eternal"
+        url = "https://github.com/irfan-eternal"
         title = "GitHub"
     [languages.en.params]
       [languages.en.params.home]
