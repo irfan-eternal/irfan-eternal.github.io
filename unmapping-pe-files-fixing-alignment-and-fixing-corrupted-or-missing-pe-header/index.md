@@ -24,8 +24,9 @@ First we will be Discussing how to Unmap PE file
  6) Make reloc size 0 Because reloc section only exist in disk . since we have dumped the pe from memory it won't have reloc section
  ![Unmapped pe](unmapped.png) 
  7) Go to Optional Header tab and make sure the image base is same as the packed binary's image Base
+  ![Image Base](image_base.png) 
  8) This is the Final Unmapped PE. Save It
- ![Image Base](image_base.png) 
+
 
 
 ## Fixing Alignment and Fixing corrupted/Missing PE Header
