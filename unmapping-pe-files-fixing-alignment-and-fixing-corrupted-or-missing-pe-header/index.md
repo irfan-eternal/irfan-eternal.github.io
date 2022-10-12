@@ -11,8 +11,11 @@ First we will be Discussing how to Unmap PE file
 
 ## Unmapping PE files
  While Unpacking malware we dump the mapped binary into file. For proper analysis we need to convert this to an Unmapped Binary. We can make sure that the binary is mapped by looking at the raw address of first section, it will be always 1000 . For unmapped binaries the first section starts at 400. The tools we will be using are [PE-bear](https://github.com/hasherezade/pe-bear-releases) and [HxD](http://mh-nexus.de/hxd)
-
  
+ **Purpose**
+ 
+ The purpose of unmapping a File is to make the sections line up correctly.In the mapped PE, sections are not lined up correctly due to this we cannot see informations like imports and exports of the PE. By unmapping we can make the sections line up correctly and view informations like imports and exports of the PE
+
 **Steps**
 
  1) Open the File in PE-bear go to the Section Hdrs tab
