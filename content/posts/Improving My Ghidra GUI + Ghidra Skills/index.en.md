@@ -63,7 +63,21 @@ Find the Actions you perform the Most. look if there is a Key Binding for it. if
 
 ## Ghidra Extensions
 
-Ghidrathon
+Ghidra Extensions Help you to import other Features which are not in Ghidra. You can install a Ghidra Extension in GUI by Going to Ghidra project Manager Window.Click File → Install Extensions > Click on the '+' icon in the Top left > Select the Folder Which Contain the Ghidra Extension.
+Find the Ghidra Documentation for extensions [Here](https://ghidra-sre.org/InstallationGuide.html#Extensions) .These are the Two Extensions i have found usefull
+
+1) [Ghidrathon](https://github.com/mandiant/Ghidrathon) : The FLARE team's open-source extension to add Python 3 scripting to Ghidra.
+2) [Kaiju](https://github.com/certcc/kaiju) :  Kaiju is a binary analysis framework extension for the Ghidra software reverse engineering suite
+
+## Ghidra Scripting
+
+Ghidra Supports Scripting in multiple languages. I use python for scripting in Ghidra. Ghidra API is very powerfull that we can replace a Multiline code with a single Ghidra API function Call.I will Show some of the Cool Ghidra API Functions Belw
+
+1) find(Address addr, byte[] values) : Searches memory from 'addr' for 'values' and returns the address of 'values' if it is found
+2) getBytes(Address addr, int length) : Return 'length' bytes from memory starting from 'addr'
+3) getReferencesto( Address addr) : Get All the XREF's to addr
+4) setEOLComment(Address addr, String message): Add an EOLComment at 'addr' which has the comment 'message'
+5) createBookmark(Addres addr, String category, String note): 
 
 
 
