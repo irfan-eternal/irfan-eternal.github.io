@@ -47,7 +47,9 @@ I won't recommend you to use this Same Sections. Try to find the Windows you use
 Ghidra Lets you Cutomize the Code Browser by Visiting Edit > Tool Options.
 
 
-An option which helped me a lot is Cursor Text Highlighting: Edit > Tool Options > Cursor Text Highlight > Mouse Button to Activate : LEFT (This will highlight the occurence of a selected string in Listing/Decompiler Window)
+An option which helped me a lot is Cursor Text Highlighting: 
+1) Click Edit > Tool Options 
+2) Under  Cursor Text Highlight select "Mouse Button to Activate" to  "LEFT" (This will highlight the occurence of a selected string in Listing/Decompiler Window)
 
 ## Key Bindings
 
@@ -67,7 +69,13 @@ Find the actions you perform the Most. look if there is a Key Binding for it. if
 
 ## Ghidra Extensions
 
-Ghidra Extensions help you to import other features which are not in Ghidra. You can install a Ghidra Extension in GUI by going to Ghidra project Manager Window.Click File → Install Extensions > Click on the '+' icon in the Top left > Select the folder Which Contain the Ghidra Extension.
+Ghidra Extensions help you to import other features which are not in Ghidra. You can install a Ghidra Extension in GUI by going to Ghidra project Manager Window.
+1) Click File → Install Extensions 
+2) Click on the '+' icon in the Top right 
+3) Select the folder Which Contain the Ghidra Extension 
+4) After Importing Make sure Box under the Extension you want to install is Checked 
+5) Click OK and Restart Ghidra
+
 Find the Ghidra Documentation for extensions [Here](https://ghidra-sre.org/InstallationGuide.html#Extensions) .These are the Two Extensions i have found usefull
 
 1) [Ghidrathon](https://github.com/mandiant/Ghidrathon) : The FLARE team's open-source extension to add Python 3 scripting to Ghidra.
