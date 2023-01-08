@@ -2,7 +2,7 @@
 weight: 7
 title: "Analysing Shellcode to understand how they call windows API's"
 date: 2022-12-28T11:35:00+08:00
-lastmod: 2023-01-08T17:35:00+08:00
+lastmod: 2022-12-30T17:35:00+08:00
 draft: false
 author: "irfan_eternal"
 authorLink: "https://twitter.com/irfan_eternal"
