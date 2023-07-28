@@ -17,12 +17,12 @@ hiddenFromHomePage: false
 
 ---
 ## Introduction
-Hi all, Today we will be Analyzing Guloader  Shellcode using Ghidra. Our Objective is to Identify some Anti-analysis and Obfuscation techniques used by Guloader and Defeat it using Automation
+Hi all, Today we will be Analyzing Guloader  Shellcode using Ghidra. Our Objective is to Identify some Anti-analysis and Obfuscation techniques used by Guloader and Defeat it using Automation. People who would like to follow along can download the sample from [here](https://bazaar.abuse.ch/sample/55130719554a0b3dcbf971c646e6e668b663b796f4be09816d405cc15a16d7d6/) . The File was was seen on 2023-05-11
 
 ## Anti-Analysis / Obfuscation
 
 ### API Hashing
-The Shellcode is using API hashing to hide API's being called. For Each API Resolving it first resolves [LdrLoadDll](https://malapi.io/winapi/LdrLoadDll) add 5 to it's address to avoid any Hooking done by EDR . It then use this address to Load the DLL. after Loading the DLL . it resolves the hash of the API it needs to call
+The Shellcode is using API hashing to hide API's being called. For Each API Resolving it first resolves [LdrLoadDll](https://malapi.io/winapi/LdrLoadDll) add 5 to it's address to avoid any Hooking done by EDR .Adding 5 to the API address is to avoid the classic 5 Byte Hook.Most EDR replaces first first bytes with a jump to EDR's code. It then use this address to Load the DLL. after Loading the DLL . it resolves the hash of the API it needs to call
 ![api_resolving](resolve_api.PNG)
 
 API Hashing function is the same as we see in the wild. it goes to the Export Directory of the DLL Loaded and performs Hashing of all API name's till the hashes match .if the hashes match it stores the Address of the API
@@ -105,7 +105,11 @@ After these Steps the Control Flow will be Deobfusucated and Decrypted Strings a
 
 ![output](result.PNG)
 
+
+
 I Have only Checked one sample with the scripts .Feel free to use it with Other Guloader Shell Code and let me know if you are able to see the Decrypted strings
+
+File SHA1 : 992d98aa6f31ae6f8f42fac9866a19c2a2f879be
 
 ## References
 
