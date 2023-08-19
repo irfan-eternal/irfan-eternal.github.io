@@ -1,0 +1,14 @@
+Anti-Debugging -v
+Mutex check
+Anti-VM -v 
+AntiSandbox -v
+Drive Size - v
+XP -v
+Persistance : if admin tasks / else autoruns - v
+RtlSetProcessisCritical | SeDebugPrivilage - v
+WindowsHook : key Logging : log.tmp -v
+Credential Stealing | VtxXW | c2 -v 
+
+
+change into a function
+https://stackoverflow.com/questions/12524994/encrypt-and-decrypt-using-pycrypto-aes-256
