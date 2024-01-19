@@ -7,11 +7,12 @@ draft: false
 author: "irfan_eternal"
 authorLink: "https://twitter.com/irfan_eternal"
 description: "Analysing Shellcode to understand how they call windows API's"
+featuredImage: "shellcode.jpg"
 images: []
 resources:
 
 
-categories: ["Malware Analysis"]
+categories: ["Reverse Engineering"]
 
 hiddenFromHomePage: false
 

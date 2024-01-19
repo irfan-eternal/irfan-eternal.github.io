@@ -8,6 +8,7 @@ author: "irfan_eternal"
 authorLink: "https://twitter.com/irfan_eternal"
 description: "Guloader Deobfuscation using Ghidra"
 images: []
+featuredImage: "gloader.jpg"
 resources:
 
 

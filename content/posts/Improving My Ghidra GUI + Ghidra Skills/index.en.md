@@ -7,15 +7,16 @@ draft: false
 author: "irfan_eternal"
 authorLink: "https://twitter.com/irfan_eternal"
 description: "Improving My Ghidra GUI + Ghidra Skills"
+featuredImage: "ghidra2.jpg"
 images: []
 resources:
 
 
-categories: ["Malware Analysis"]
+categories: ["Tool Guide"]
 
 hiddenFromHomePage: false
 ---
-<img src="ghidra.png" alt="Ghidra" width="400"/>
+
 
 Hi all, Today I am writitng this post to let you know how i improved  My Ghidra GUI & Ghidra Skills. We will be  Discussing the below topics
 

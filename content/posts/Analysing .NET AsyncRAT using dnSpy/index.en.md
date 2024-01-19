@@ -8,7 +8,7 @@ author: "irfan_eternal"
 authorLink: "https://twitter.com/irfan_eternal"
 description: "Analysing .NET AsyncRAT using dnSpy"
 images: []
-featuredImage: "static_dec.png"
+featuredImage: "asyncrat.jpg"
 resources:
 
 

@@ -7,6 +7,7 @@ draft: false
 author: "irfan_eternal"
 authorLink: "https://twitter.com/irfan_eternal"
 description: "Unmapping PE files, fixing Alignment and Fixing coruupted/Missing PE Header"
+featuredImage: "unpack.jpg"
 images: []
 resources:
 
