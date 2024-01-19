@@ -55,7 +55,11 @@ Stage 2 is Very Obfuscated Stage with Multiple Anti-Analysis Techniques to Frust
 ### Weird Conditional Jumps
 
 This Stage Contains Weird Conditional Jumps as Show in the below image . They are JNZ and JZ jumps with same Destination Address. This is Infact an Unconditional Jump. The Malware is using this technique make it hard for the Disassembler and Decompiler
+
+
+
 ![stage2beforefixingwierduncondjumps.PNG](stage2beforefixingwierduncondjumps.PNG)
+
 
 We can Fix this Easily by finding all the Places with this weird Conditional Jumps and patching it with unconditional Jump.
 
