@@ -1,0 +1,46 @@
+
+Stage1
+small shell code - stage1ShellcodeCalling, Stage1ShellcodeAlloc
+Dynmaic API loding using Stack strings and GetProcAddress
+write new program and  load it to memory  - 
+
+Stage2
+antidebug checks with cfo using je jne , ntflobal , beingdebugged
+shell code encrypted and decrypted
+api hashing - djb2 hashing
+CheckKeyboardLayout
+Check if is run with medium integriry level else run as administrator - OpenProcessToken->GetTokenInformation(TokenIntegrityLabel)->GetSidSubAuthority
+loads new ntdll and agains does api hashing with shareMode as 0
+lot of anti-analysis checks
+ 1)Sandox and Avast dll - strings
+ 2)Vm detection HKLM\SYSTEM\CurrentControlSet\Enum\IDE SYSTEM\CurrentControlSet\Services\Disk\Enum\SCSI Registry Tree for Device and Drivers
+ 3)Afea.vmt  - Error Based Sandbox
+third stage decryption - based on computer runs 64 0r 32 bit
+third stage injection - RtCreateSection, RtMapViewofSection, RtlCreateUserThread
+heavens gate technique to call 3rd stage using RtlCreateUserThread
+
+
+Stage3
+apihasing
+stringDecryption (rc4 : datasize:data)
+check running process and windows against hardcdoed hashes and terminate if they match
+Check if is run with medium integriry level
+Create MD5 Hash with Seeds as ComputerName and VolumeInformation o System Directory and uses this to Create a Mutex. If Mutex Already Exists, It Exits the Thread
+Create a File Path at AppData or Temp  . Check if the File running is in this Path. if else Delete it and Copy the File from Curent Location to the File Path Created at AppData
+Deletes the Zone Identifer of the File in AppData so the System won't understand it is downloaded from Internet
+Set File Time Attributes of the new file in AppData matching advapi32.dll and give it File Attributes Hidden | System File
+Create Com Object (TaskScheduler::ITaskService Interface) and use it to Create a Scheduled Taskwith name FireFox Default UserAgent String
+Create a Mapped Object of the Current File
+Decrypt c2 URL and download Next stage using WinHttp Api
+
+
+
+
+
+
+
+0635ddfe2cca62b12b5032b420a3810b
+refs : https://gist.github.com/hsauers5/491f9dde975f1eaa97103427eda50071
+
+
+

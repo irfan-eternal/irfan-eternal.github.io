@@ -1,6 +1,6 @@
 # Improving My Ghidra GUI + Ghidra Skills
 
-<img src="ghidra.png" alt="Ghidra" width="400"/>
+
 
 Hi all, Today I am writitng this post to let you know how i improved  My Ghidra GUI & Ghidra Skills. We will be  Discussing the below topics
 
